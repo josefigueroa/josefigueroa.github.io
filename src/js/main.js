@@ -19,11 +19,11 @@ const config = {
 }
 
 const AUTHController = (function () { 
-    // if (location.host == 'http://localhost:5500') {
-	// 		config.redirect_uri = 'http://localhost:5500/dist/templates/callback.html';
-	// 	} else {
-	// 		config.redirect_uri = 'https://josefigueroa.github.io/dist/templates/callback.html';
-	// 	}
+    if (location.host == 'http://localhost:5500') {
+        config.redirect_uri = 'http://localhost:5500/dist/templates/callback.html';
+    } else {
+        config.redirect_uri = 'https://josefigueroa.github.io/dist/templates/callback.html';
+    }
     
     const getLoginUrl = (callback) => {
         window.open(
@@ -121,9 +121,10 @@ const APPController = (function () {
         let dropdownLogin = document.querySelector('.login-dropdown');
         let imgLogin = document.querySelector('.login-dropdown__img img');
         let userLogin = document.querySelector('.login-dropdown__user');
+        let src = '../../dist/images/nouser.png';
 
         dropdownLogin.classList.remove('d-none');
-        imgLogin.src = data.images[0].url;
+        imgLogin.src = (data.images.length > 0) ? data.images[0].url : src;
         userLogin.textContent = data.display_name;
 
     }
