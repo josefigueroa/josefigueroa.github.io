@@ -1,0 +1,36 @@
+footer
+  div.collapse.collapse-bar#collapseBar 
+    .collapse-bar__content 
+      include ../commons/song_list_img.pug
+  .player-bar
+    .player-bar__info
+      figure.player-bar__info-thumb
+        img(src="https://i.scdn.co/image/ab67616d00001e0228c24b54e9149cab239ac1cd", alt="")
+      .player-bar__info-artist
+        p.player-bar__info-song Some Kind of Disaster
+        p.player-bar__info-album All Time Low - Wake Up, Sunshine
+    .player-bar__player
+      button.player-bar__item.player-bar__item--repeat.d-none.d-lg-block
+        i.fa.fa-random
+      button.player-bar__item.player-bar__item--prev.d-none.d-lg-block
+        i.fa.fa-step-backward
+      button.player-bar__item.player-bar__item--play
+        i.fa.fa-play-circle
+      button.player-bar__item.player-bar__item--next
+        i.fa.fa-step-forward
+      button.player-bar__item.player-bar__item--shuffle.d-none.d-lg-block
+        i.fa.fa-redo
+      .player-bar__time.d-none.d-lg-block  
+        span 0:00 
+        span / 
+        span 3:43
+    .player-bar__control
+      .slider-container.d-none.d-lg-block
+        span.bar
+          span.fill
+        input(type="range", min="0", max="100", value="50").slider#slider
+      button.player-bar__item.player-bar__item--alt.d-none.d-lg-block
+        i.fa.fa-volume-up   
+      button.player-bar__item.player-bar__item--alt(data-toggle="collapse", href="#collapseBar" role="button" aria-expanded="false" aria-controls="collapseBar")
+        i.fa.fa-caret-up
+

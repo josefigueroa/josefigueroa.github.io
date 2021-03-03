@@ -1,0 +1,65 @@
+.table{
+    th,
+    td{
+        vertical-align: middle;
+        border-top: 0;
+        border-bottom: 1px solid $table-border-color;
+        font-size: .8rem;
+    }
+    thead{
+        display: none;
+        th{
+            border-bottom: 1px solid $table-border-color;
+            border-top: 0;
+        }
+    }
+    tbody{
+        th{
+            color: $gray-600;
+            font-weight: normal;
+            i{
+                color: $white;
+                margin-left: 15px;
+            }
+        &:first-child{
+            white-space: nowrap;
+        }
+        }
+    }
+    .active{
+        background-color: $danger;
+        .player-bar__info-album{
+            color: $black;
+        }
+    }
+}
+
+.table--no-bordered{
+    th, 
+    td{
+        border-bottom: 0;
+    }
+}
+
+@include media-breakpoint-up(lg){
+    .table{    
+        thead{
+            display: table-header-group;
+        }
+        th,
+        td{
+            font-size: 1rem;
+        }
+        .player-bar__info-song{
+            max-width: 100%;
+        }
+    }
+
+    .table--alt{
+        tbody{
+            th:first-child{
+                padding-left: 18px;
+            }
+        }
+}
+}

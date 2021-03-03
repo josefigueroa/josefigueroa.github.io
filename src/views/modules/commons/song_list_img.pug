@@ -1,0 +1,16 @@
+table.table.table--alt.table--no-bordered
+    tbody
+        each value, index in Array(15)
+            tr(class= index == 0 ? 'active' : '')
+                th(scope="row")
+                    figure.mb-0 
+                        img(src="https://via.placeholder.com/45")
+                td 
+                    .player-bar__info-artist.p-0
+                        p.player-bar__info-song.text-truncate 2AM Matoma Remix 
+                        p.player-bar__info-album.d-lg-none Astrid S 
+                td.d-none.d-lg-table-cell Astrid S 
+                td.d-none.d-lg-table-cell 2AM remixex EP 
+                td 04:26 
+                td 
+                    i.far.fa-play-circle

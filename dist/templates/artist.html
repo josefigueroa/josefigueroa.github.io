@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Music Artist</title>
+    <link href="../../dist/css/style.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="app">
+      <header> 
+        <nav class="header-nav"> 
+          <div class="header-nav__icon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></div>
+          <div class="header-nav__login dropdown">
+            <button class="btn login-dropdown d-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <figure class="login-dropdown__img"><img src="" alt="user image"/></figure><span class="login-dropdown__user"> </span><span class="dropdown-toggle"></span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLogin"><a class="dropdown-item" href="#" id="logout">Logout</a></div>
+          </div>
+        </nav>
+      </header>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item d-none d-lg-block">
+            <div class="nav-menu__logo"><i class="fab fa-spotify"></i></div>
+          </li>
+          <li class="nav-menu__item" title="Music"><a class="nav-menu__link fa fa-music" href="#"></a></li>
+          <li class="nav-menu__item" title="Podcast"><a class="nav-menu__link fa fa-podcast" href="#"></a></li>
+          <li class="nav-menu__item" title="Fav"><a class="nav-menu__link fa fa-heart" href="#"></a></li>
+          <li class="nav-menu__item" title="Mixins"><a class="nav-menu__link fa fa-compact-disc" href="#"></a></li>
+        </ul>
+      </nav>
+      <main class="main-view">
+        <div class="resume">
+          <div class="resume__content"> 
+            <div class="resume__info">
+              <h1 class="resume__title">All Time Low </h1>
+              <p class="resume__genre">Rock Pop Punk</p>
+              <p class="resume__desc">Formed in 2003 in the suburbs of Baltimore, Maryland, All Time Low started out as a high school cover band before morphing into a melodic pop-punk act influenced by predecessors like New Found Glory and Blink-182... </p>
+              <div class="resume__buttons">
+                <button class="btn btn-danger">PLAY ALL</button>
+                <button class="btn btn-danger">MIX <i class="fa fa-sync">         </i></button>
+                <button class="btn btn-sm btn-info"> <i class="far fa-bookmark"></i></button>
+                <div class="resume__share"><i class="fa fa-share-alt text-danger"> </i><span> SHARE (124)</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section> 
+          <ul class="nav nav-tabs nav-tabs--alt bg-secondary" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link active" id="oveview-tab" data-toggle="tab" href="#oveview" role="tab" aria-controls="oveview" aria-selected="true">Oveview</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="true">Information</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="playlist-tab" data-toggle="tab" href="#playlist" role="tab" aria-controls="playlist" aria-selected="true">Playlist</a></li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="oveview" role="tabpanel" aria-labelledby="oveview-tab"> 
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">SONG</th>
+                    <th scope="col">ALBUM</th>
+                    <th scope="col">TIME</th>
+                    <th scope="col"> </th>
+                  </tr>
+                  <tr></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">01      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">02      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">03      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">04      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">05      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">06      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">07      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">08      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">09      <i class="far fa-heart"></i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">10      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">11      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">12      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">13      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">14      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">15      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">16      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">17      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">18      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">19      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">20      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">21      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">22      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">23      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">24      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">25      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">26      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">27      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">28      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">29      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">30      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">31      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">32      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">33      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">34      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">35      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">36      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">37      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">38      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">39      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">40      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">41      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">42      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">43      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">44      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">45      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">46      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">47      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">48      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">49      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-none d-lg-table-cell" scope="row">50      <i class="far fa-heart"> </i></th>
+                    <td> 
+                      <div class="player-bar__info-artist p-0">
+                        <p class="player-bar__info-song">Some Kind of Disaster</p>
+                        <p class="player-bar__info-album d-lg-none">All Time Low              </p>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">Wake Up, Sunshine    </td>
+                    <td>02:56</td>
+                    <td> <i class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="information-tab"> 
+              <p>Formed in 2003 in the suburbs of Baltimore, Maryland, All Time Low started out as a high school cover band before morphing into a melodic pop-punk act influenced by predecessors like  and . An enduring presence in the late-2000s scene, they were a Warped Tour mainstay from their breakthrough sophomore set, So Wrong, It's Right (2007), to their chart-peak sixth LP, Future Hearts (2015). Following a late-career dip into pop with 2017's Last Young Renegade, they course-corrected at the start of the 2020s with Wake Up, Sunshine.</p>
+              <p>Singer/guitarist Alex Gaskarth and guitarist Jack Barakat were All Time Low's co-founders, with bassist Zack Merrick and drummer Rian Dawson rounding out their energetic pop-punk sound and rowdy live shows, which often included silly string and beach balls. Honing their skills between homework and other teenage commitments, the guys managed to tour across the East Coast and the South during school breaks. They issued a four-song EP, 2004's The Three Words to Remember in Dealing with the End, with help from local label , and followed its release with a full-length album, The Party Scene, one year later.</p>
+              <p>Touring across the country that summer, the guys found themselves on bills with similar acts like , , and . Along the way, All Time Low also bumped into fellow pop-punkers , who brought the young band to the attention of their label, Hopeless Records. The label was immediately impressed, and All Time Low had officially become part of the Hopeless family by March 2006, just a few months shy of the members' high-school graduation. Finally done with schoolwork and able to concentrate full-time on music, the group issued Put Up or Shut Up -- a seven-song EP that mostly featured new recordings of older material -- that July.</p>
+              <p>All Time Low supported the EP's release with a handful of Warped Tour dates before hitting the road again with . So Wrong, It's Right appeared in 2007, marking the band's first full-length release for Hopeless. After being named 2008's Band of the Year by Alternative Press, All Time Low returned with their second album, Nothing Personal, in July 2009. Debuting at number four on the Billboard charts, Nothing Personal helped make All Time Low one of the top emo-pop acts in the business. Two CD/DVD packages, MTV Unplugged and Straight to DVD, were released the following year, tiding fans over while the guys returned to the studio to begin work on their major-label debut for.</p>
+              <p>Dirty Work, featuring the single "I Feel Like Dancin'," was released in 2011. The album reached number six on the Billboard charts the week it was released, and the band hit the road. In 2012, All Time Low announced they had parted ways with  and released a new song, "The Reckless and the Brave," on their website in June. Soon after, they re-signed with Hopeless and began work on a new album. Don't Panic was released in November 2012, then reissued almost a year later with four newly recorded songs and four acoustic versions under the name Don't Panic: It's Longer Now! In 2015, All Time Low returned with their sixth record, Future Hearts, which found them reuniting with their Dirty Work producer, John Feldmann. In 2016, they released Straight to DVD 2: Past, Present & Future, a sequel to the 2010 live album. In February 2017, All Time Low issued the single "Dirty Laundry" in anticipation of their seventh studio long-player, Last Young Renegade, which arrived in June of that year. Renegade was their first effort issued on , and featured the singles "Nice2KnoU" and the pop-focused "Life of the Party." Their fifth consecutive Top Ten record, the set's unabashed pop polish proved divisive and, after the era came to a close, the band got to work on a course-correcting follow-up.</p>
+              <p>In 2018, the summery and anthemic one-off single "Everything Is Fine" offered a taste of things to come with album number eight, which landed in early 2020. Wake Up, Sunshine saw All Time Low returning to their pop-punk roots after the brief pop foray on 2017's Renegade. Featuring appearances by  and the Band Camino, the upbeat LP included the single "Some Kind of Disaster." ~ Corey Apar</p>
+            </div>
+            <div class="tab-pane fade" id="playlist" role="tabpanel" aria-labelledby="playlist-tab">.</div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="collapse collapse-bar" id="collapseBar"> 
+          <div class="collapse-bar__content"> 
+            <table class="table table--alt table--no-bordered">
+              <tbody>
+                <tr class="active">
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="player-bar">
+          <div class="player-bar__info">
+            <figure class="player-bar__info-thumb"><img src="https://i.scdn.co/image/ab67616d00001e0228c24b54e9149cab239ac1cd" alt=""/></figure>
+            <div class="player-bar__info-artist">
+              <p class="player-bar__info-song">Some Kind of Disaster</p>
+              <p class="player-bar__info-album">All Time Low - Wake Up, Sunshine</p>
+            </div>
+          </div>
+          <div class="player-bar__player">
+            <button class="player-bar__item player-bar__item--repeat d-none d-lg-block"><i class="fa fa-random"></i></button>
+            <button class="player-bar__item player-bar__item--prev d-none d-lg-block"><i class="fa fa-step-backward"></i></button>
+            <button class="player-bar__item player-bar__item--play"><i class="fa fa-play-circle"></i></button>
+            <button class="player-bar__item player-bar__item--next"><i class="fa fa-step-forward"></i></button>
+            <button class="player-bar__item player-bar__item--shuffle d-none d-lg-block"><i class="fa fa-redo"></i></button>
+            <div class="player-bar__time d-none d-lg-block"> <span>0:00 </span><span>/ </span><span>3:43</span></div>
+          </div>
+          <div class="player-bar__control">
+            <div class="slider-container d-none d-lg-block"><span class="bar"><span class="fill"></span></span>
+              <input class="slider" type="range" min="0" max="100" value="50" id="slider"/>
+            </div>
+            <button class="player-bar__item player-bar__item--alt d-none d-lg-block"><i class="fa fa-volume-up">  </i></button>
+            <button class="player-bar__item player-bar__item--alt" data-toggle="collapse" href="#collapseBar" role="button" aria-expanded="false" aria-controls="collapseBar"><i class="fa fa-caret-up"></i></button>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header align-items-center">
+              <div class="col-md-6 p-0">
+                <div class="form-control--custom">
+                  <input class="form-control" type="search" placeholder="Buscar artistas o canciones"/><span class="form-control--search"></span>
+                </div>
+              </div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="fa fa-times" aria-hidden="true"> </span></button>
+            </div>
+            <div class="modal-body">...</div>
+          </div>
+        </div>
+      </div>
+      <script src="../../dist/js/main.min.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.form-control--custom{
+    position: relative;
+    .form-control{
+        padding-left: 35px;
+    }
+    .form-control--search{
+        position: absolute;
+        top: 50%;
+        color: #000;
+        transform: translate(50%, -50%);
+        pointer-events: none;
+        &::before{
+            content: "\f002";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+    }
+}

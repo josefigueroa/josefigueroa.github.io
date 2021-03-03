@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		block title
+			title Main
+		block css
+			link(href="../../dist/css/style.min.css", rel="stylesheet")
+			
+	body
+		block append config
+			include ./config/config.pug
+		#app
+			block header
+				include ./modules/header/header.pug
+
+			block body
+			block footer
+				include ./modules/footer/footer.pug
+			
+			include ./modules/commons/modal/search_modal.pug
+			
+			block load_javascripts
+				script(src="../../dist/js/main.min.js")

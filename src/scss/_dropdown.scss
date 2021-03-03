@@ -1,0 +1,39 @@
+.login-dropdown{
+    display: flex;
+    align-items: center;
+    border-radius: 23px;
+    padding: 2px;
+    background: $black;
+    
+    &:hover{
+        background: $gray-900;
+    }
+    .login-dropdown__img{
+        margin: 0;
+        width: 28px;
+        height: 28px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    .login-dropdown__user{
+        margin-left: 15px;
+        margin-right: 8px;
+        font-size: 14px;
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .dropdown-toggle{
+        margin-right: 5px;
+    }
+}
+
+@include media-breakpoint-up(lg) { 
+    .login-dropdown{
+        margin-right: 5px;    
+    }
+}

@@ -1,0 +1,20 @@
+header  
+  nav.header-nav  
+    
+    //- ul.header-nav__list.container-fluid
+    //-   each headerItems, key in header
+    //-     li.header-nav__item(class=(key==0 ? "active" : ''))
+    //-       a.header-nav__link #{headerItems}
+
+    div(class="header-nav__icon" data-toggle="modal" data-target="#searchModal")
+      i.fa.fa-search
+    .header-nav__login.dropdown
+      button(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").btn.login-dropdown.d-none
+        figure.login-dropdown__img
+          img(src="", alt="user image")
+        span.login-dropdown__user 
+        span.dropdown-toggle
+      div(class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLogin")
+          a(class="dropdown-item" href="#" id="logout") Logout
+
+

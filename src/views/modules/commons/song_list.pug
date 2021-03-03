@@ -1,0 +1,32 @@
+table.table
+  thead.thead-light
+    tr
+      th(scope="col") #
+      th(scope="col") SONG
+      th(scope="col") ALBUM
+      th(scope="col") TIME
+      th(scope="col") 
+    tr
+  tbody
+    each _, i in Array(50)      
+      tr
+        if i < 9
+          th(scope="row" class="d-none d-lg-table-cell") 0#{i+1}      
+            i.far.fa-heart
+        else
+          th(scope="row" class="d-none d-lg-table-cell") #{i+1}      
+            i.far.fa-heart 
+            
+        td 
+          .player-bar__info-artist.p-0
+              p.player-bar__info-song Some Kind of Disaster
+              p.player-bar__info-album.d-lg-none All Time Low              
+        td(class="d-none d-lg-table-cell") Wake Up, Sunshine    
+        td 02:56
+        td 
+          i(class="fa fa-ellipsis-h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          div(class="dropdown-menu" aria-labelledby="dropdownMenuLink")
+            a(class="dropdown-item" href="#") Action
+            a(class="dropdown-item" href="#") Another action
+            a(class="dropdown-item" href="#") Something else here
+  

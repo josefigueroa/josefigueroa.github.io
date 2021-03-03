@@ -1,0 +1,30 @@
+extends ../base.pug
+
+block title
+  title Music Artist
+
+block body
+  include ../modules/main/nav_menu.pug
+  main.main-view
+    include ../modules/artist/resume.pug
+    section 
+      ul.nav.nav-tabs.nav-tabs--alt.bg-secondary#myTab(role="tablist")
+        li.nav-item(role="presentation")
+          a.nav-link.active#oveview-tab(data-toggle="tab", href="#oveview", role="tab", aria-controls="oveview", aria-selected="true") Oveview
+        
+        li.nav-item(role="presentation")
+          a.nav-link#information-tab(data-toggle="tab", href="#information", role="tab", aria-controls="information", aria-selected="true") Information
+
+        li.nav-item(role="presentation")
+          a.nav-link#playlist-tab(data-toggle="tab", href="#playlist", role="tab", aria-controls="playlist", aria-selected="true") Playlist
+      
+      .tab-content#myTabContent
+        .tab-pane.fade.show.active#oveview(role="tabpanel", aria-labelledby="oveview-tab") 
+          include ../modules/commons/song_list.pug
+        .tab-pane.fade#information(role="tabpanel", aria-labelledby="information-tab") 
+          include ../modules/artist/information.pug
+        .tab-pane.fade#playlist(role="tabpanel", aria-labelledby="playlist-tab") .
+
+    
+    
+                        

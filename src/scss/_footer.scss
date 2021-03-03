@@ -1,0 +1,163 @@
+footer{
+  grid-area: now-playing-bar;
+}
+
+.collapse-bar{
+  width: 100%;
+  background-color: $black;
+  overflow-x : auto;
+  position: fixed;
+  bottom: 120px;
+  max-height: calc(100% - 183px);
+}
+
+.collapse-bar__content{
+  padding: 10px 0;
+  
+}
+
+.player-bar{
+  height: 60px;
+  background: $dark;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  // grid-template-columns: repeat(3, 1fr);
+}
+
+.player-bar__info{
+  display: flex;
+  &-thumb{
+    align-self: center;
+    padding: 0 10px;
+    width: 60px;
+    margin: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-artist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+  }  
+  &-song{
+   margin: 0;
+   font-size: .8rem;
+   font-weight: bold;
+  }
+  &-album{
+   margin: 0;
+   font-size: .6rem;
+   color: $gray-600;
+  }
+}
+
+.player-bar__player{
+  display: flex;
+  justify-content: center;
+}
+.player-bar__item{
+  background: none;
+  border: 0;
+  color: $white;
+  .fa.fa-random,
+  .fa-step-backward,
+  .fa-step-forward,
+  .fa-redo,
+  .fa-volume-up,
+  .fa-caret-up{
+    font-size: 18px;
+  }
+  .fa-play-circle{
+    font-size: 35px;
+    color: $danger;
+  }
+  .fa-caret-up{
+    transition: all .2s ease-in;
+  }
+}
+
+.player-bar__control{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+[href="#collapseBar"]{
+  &[aria-expanded="true"]{
+    .fa-caret-up{
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .collapse-bar{
+    bottom: 82px;
+    max-height: calc(100% - 154px);
+  }
+
+  .player-bar{
+    grid-template-columns: auto 1fr auto;
+    height: auto;
+    width: 100%;
+  }
+
+  .player-bar__info{
+    display: flex;
+    &-thumb{
+      width: 80px;
+      height: 82px;
+      padding: 0;
+    }
+
+    &-artist{
+      padding-left: 25px; 
+    }  
+    &-song{
+      font-size: 1rem;
+    }
+    &-album{
+      font-size: .8rem;
+    }
+  }
+
+  .player-bar__item{
+    background: none;
+    border: 0;
+    color: $white;
+    &:not(:last-child){
+      margin-right: 40px;
+    }
+    &--alt{
+      &:not(:last-child){
+        margin-right: 25px;
+      }
+    }     
+    .fa-play-circle{
+      font-size: 40px;
+    }
+  }
+  .player-bar__time {
+    align-self: center;
+    color: $gray-600;
+  }
+
+  .player-bar__control{
+    padding-right: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

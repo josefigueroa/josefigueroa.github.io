@@ -1,0 +1,37 @@
+.nav-tabs {
+    .nav-item{
+        flex-grow: 1;
+        text-align: center;
+    }
+    .nav-link{
+        @extend .header-nav__link;
+        border: 0;
+        border-bottom: 5px solid transparent;    
+        &.active{
+            opacity: 1;
+        }
+    }
+}
+
+.nav-tabs--alt{
+    padding: 0 15px;
+}
+
+.tab-content{
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+@include media-breakpoint-up(lg){
+    .nav-tabs--alt{
+        padding: 0;
+    }
+
+    .tab-content{
+        max-width: 1140px;
+        // padding-left: 15px;
+        margin: 0 auto;
+    }
+}

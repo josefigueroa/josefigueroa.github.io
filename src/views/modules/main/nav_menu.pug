@@ -1,0 +1,8 @@
+nav.nav-menu
+  ul.nav-menu__list
+    li.nav-menu__item.d-none.d-lg-block
+      .nav-menu__logo
+        i.fab.fa-spotify
+    each navmenuItems, key in navMenu
+      li.nav-menu__item(title=navmenuItems.name)
+        a(href='#').nav-menu__link(class=navmenuItems.class)

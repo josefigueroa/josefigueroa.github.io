@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Music Stream</title>
+    <link href="../../dist/css/style.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="app">
+      <main class="main-view"></main>
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header align-items-center">
+              <div class="col-md-6 p-0">
+                <div class="form-control--custom">
+                  <input class="form-control" type="search" placeholder="Buscar artistas o canciones"/><span class="form-control--search"></span>
+                </div>
+              </div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="fa fa-times" aria-hidden="true"> </span></button>
+            </div>
+            <div class="modal-body">...</div>
+          </div>
+        </div>
+      </div>
+      <script src="../../dist/js/main.min.js"></script>
+      <script>
+        const init = (function() {
+            console.log('hash', location.hash);
+        
+            var hash = {};
+            location.hash.replace(/^#\/?/, '').split('&').forEach(function(kv) {
+                var spl = kv.indexOf('=');
+                if (spl != -1) {
+                    hash[kv.substring(0, spl)] = decodeURIComponent(kv.substring(spl+1));
+                }
+            });
+        
+            console.log('initial hash', hash);
+        
+            if (hash.access_token) {
+                window.opener.postMessage(JSON.stringify({
+                    type:'access_token',
+                    access_token: hash.access_token,
+                    expires_in: hash.expires_in || 0
+                }), '*');
+        
+                
+                window.close();
+                
+            }
+        })();
+      </script>
+    </div>
+  </body>
+</html>
