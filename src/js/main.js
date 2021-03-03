@@ -13,7 +13,7 @@ const config = {
     clientId: '5e8ce1f91d3e42a5885116c9b3c44e3f',
     scopes: scopes.join(' '),
     // redirect_uri: 'https://0bgqb.csb.app/',
-    redirect_uri: '',
+    redirect_uri: 'https://josefigueroa.github.io/dist/templates/callback.html',
     base_url: 'https://api.spotify.com/v1/',
     auth_url: 'https://accounts.spotify.com/authorize'
 }
