@@ -18,7 +18,13 @@ const config = {
     auth_url: 'https://accounts.spotify.com/authorize'
 }
 
-const AUTHController = (function () {       
+const AUTHController = (function () { 
+    if (location.host == 'http://localhost:5500') {
+			config.redirect_uri = 'http://localhost:5500/dist/templates/callback.html';
+		} else {
+			config.redirect_uri = 'https://josefigueroa.github.io/dist/templates/callback.html';
+		}
+    
     const getLoginUrl = (callback) => {
         window.open(
             config.auth_url+'?client_id='+config.clientId+'&response_type=token&redirect_uri='+config.redirect_uri+'&scope='+config.scopes+'&show_dialog=true', 
