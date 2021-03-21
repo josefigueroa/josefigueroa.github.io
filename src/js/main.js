@@ -320,7 +320,7 @@ const APPController = (function () {
                         <img src="${artist.images.length ? artist.images[0].url : ` `}", alt=""/>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="http://127.0.0.1:5500/josefigueroa.github.io/dist/templates/artist.html?id=${artist.id}" class="stretched-link">${artist.name}</a>
+                                <a href="/josefigueroa.github.io/dist/templates/artist.html?id=${artist.id}" class="stretched-link">${artist.name}</a>
                             </h5> 
                         </div>
                     </div>
@@ -394,7 +394,7 @@ const APPController = (function () {
         let dataItems = data.items;
         let topArtist = dataItems.slice(0,5);
         let artistData = dataItems.slice(5, data.items.length);     
-           
+
         
         imgGalleryBiggest.src = dataItems[0].images[0].url;
         topArtistGalleryBiggest.appendChild(imgGalleryBiggest);
