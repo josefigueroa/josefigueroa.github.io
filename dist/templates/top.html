@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Music Top</title>
+    <link href="../../dist/css/style.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="app">
+      <header> 
+        <nav class="header-nav"> 
+          <div class="header-nav__back"> <a class="header-nav__left" href="#"> <i class="fa fa-chevron-left"> </i></a><a class="header-nav__right" href="#"> <i class="fa fa-chevron-right"></i></a></div>
+          <div class="header-nav__right-side"> 
+            <div class="header-nav__icon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></div>
+            <div class="header-nav__login dropdown">
+              <button class="btn login-dropdown d-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <figure class="login-dropdown__img"><img src="" alt="user image"/></figure><span class="login-dropdown__user"> </span><span class="dropdown-toggle"></span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLogin"><a class="dropdown-item" href="#" id="logout">Logout</a></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item d-none d-lg-block">
+            <div class="nav-menu__logo"><i class="fab fa-spotify"></i></div>
+          </li>
+          <li class="nav-menu__item active" title="Top"><a class="nav-menu__link fa fa-music" href="/josefigueroa.github.io/dist/templates/top.html"></a></li>
+          <li class="nav-menu__item" title="Podcast"><a class="nav-menu__link fa fa-podcast"></a></li>
+          <li class="nav-menu__item" title="Fav"><a class="nav-menu__link fa fa-heart"></a></li>
+          <li class="nav-menu__item" title="Mixins"><a class="nav-menu__link fa fa-compact-disc"></a></li>
+        </ul>
+      </nav>
+      <main class="main-view">
+        <section class="section-content">
+          <h2>Top Artist Around You</h2>
+          <div id="topArtistGallery"> 
+            <div class="gallery"> 
+              <div class="gallery__biggest">
+                <div class="gallery__overlay">
+                  <h3 class="gallery__title">                                         </h3>
+                </div>
+              </div>
+              <div class="gallery_smallest">                    </div>
+            </div>
+          </div>
+          <div id="topArtist"> 
+            <div class="top-artists-slider"></div>
+          </div>
+          <h2>Top Tracks Around You</h2>
+          <div id="topTracksGallery"> 
+            <div class="gallery"> 
+              <div class="gallery__biggest">
+                <div class="gallery__overlay">
+                  <h3 class="gallery__title"> </h3>
+                  <p class="gallery__text">                       </p>
+                </div>
+              </div>
+              <div class="gallery_smallest"> </div>
+            </div>
+          </div>
+          <div id="topTracks"> 
+            <div class="top-tracks-slider"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="collapse collapse-bar" id="collapseBar"> 
+          <div class="collapse-bar__content"> 
+            <table class="table table--alt table--no-bordered">
+              <tbody>
+                <tr class="active">
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <figure class="mb-0"> <img src="https://via.placeholder.com/45"/></figure>
+                  </th>
+                  <td> 
+                    <div class="player-bar__info-artist p-0">
+                      <p class="player-bar__info-song text-truncate">2AM Matoma Remix </p>
+                      <p class="player-bar__info-album d-lg-none">Astrid S </p>
+                    </div>
+                  </td>
+                  <td class="d-none d-lg-table-cell">Astrid S </td>
+                  <td class="d-none d-lg-table-cell">2AM remixex EP </td>
+                  <td>04:26 </td>
+                  <td> <i class="far fa-play-circle"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="player-bar">
+          <div class="player-bar__info">
+            <figure class="player-bar__info-thumb"><img src="https://i.scdn.co/image/ab67616d00001e0228c24b54e9149cab239ac1cd" alt=""/></figure>
+            <div class="player-bar__info-artist">
+              <p class="player-bar__info-song">Some Kind of Disaster</p>
+              <p class="player-bar__info-album">All Time Low - Wake Up, Sunshine</p>
+            </div>
+          </div>
+          <div class="player-bar__player">
+            <button class="player-bar__item player-bar__item--repeat d-none d-lg-block"><i class="fa fa-random"></i></button>
+            <button class="player-bar__item player-bar__item--prev d-none d-lg-block"><i class="fa fa-step-backward"></i></button>
+            <button class="player-bar__item player-bar__item--play"><i class="fa fa-play-circle"></i></button>
+            <button class="player-bar__item player-bar__item--next"><i class="fa fa-step-forward"></i></button>
+            <button class="player-bar__item player-bar__item--shuffle d-none d-lg-block"><i class="fa fa-redo"></i></button>
+            <div class="player-bar__time d-none d-lg-block"> <span>0:00 </span><span>/ </span><span>3:43</span></div>
+          </div>
+          <div class="player-bar__control">
+            <div class="slider-container d-none d-lg-block"><span class="bar"><span class="fill"></span></span>
+              <input class="slider" type="range" min="0" max="100" value="50" id="slider"/>
+            </div>
+            <button class="player-bar__item player-bar__item--alt d-none d-lg-block"><i class="fa fa-volume-up">  </i></button>
+            <button class="player-bar__item player-bar__item--alt" data-toggle="collapse" href="#collapseBar" role="button" aria-expanded="false" aria-controls="collapseBar"><i class="fa fa-caret-up"></i></button>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header align-items-center">
+              <div class="col-md-6 p-0">
+                <div class="form-control--custom">
+                  <input class="form-control" id="search" type="search" placeholder="Buscar artistas o canciones" autocomplete="off"/><span class="form-control--search"></span>
+                </div>
+              </div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="fa fa-times" aria-hidden="true"> </span></button>
+            </div>
+            <div class="modal-body"> </div>
+          </div>
+        </div>
+      </div>
+      <script src="../../dist/js/main.min.js"></script>
+    </div>
+  </body>
+</html>

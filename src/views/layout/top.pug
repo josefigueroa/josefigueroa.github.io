@@ -1,0 +1,31 @@
+extends ../base.pug
+
+block title
+  title Music Top
+
+block body
+  include ../modules/main/nav_menu.pug
+  main.main-view
+    section.section-content
+        h2 Top Artist Around You
+        #topArtistGallery 
+            .gallery 
+                .gallery__biggest
+                    .gallery__overlay
+                        h3.gallery__title                                          
+                .gallery_smallest                     
+        
+        #topArtist 
+            .top-artists-slider
+                
+        h2 Top Tracks Around You
+        #topTracksGallery 
+            .gallery 
+                .gallery__biggest
+                    .gallery__overlay
+                        h3.gallery__title 
+                        p.gallery__text                        
+                .gallery_smallest 
+        
+        #topTracks 
+            .top-tracks-slider

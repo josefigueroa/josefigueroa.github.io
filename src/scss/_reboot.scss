@@ -1,7 +1,7 @@
 html,
 body{
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 main{
@@ -12,4 +12,9 @@ ul{
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+img {
+  width: 100%;
+  transition: all .5s ease-out;
 }

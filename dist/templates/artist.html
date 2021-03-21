@@ -11,12 +11,15 @@
     <div id="app">
       <header> 
         <nav class="header-nav"> 
-          <div class="header-nav__icon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></div>
-          <div class="header-nav__login dropdown">
-            <button class="btn login-dropdown d-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <figure class="login-dropdown__img"><img src="" alt="user image"/></figure><span class="login-dropdown__user"> </span><span class="dropdown-toggle"></span>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLogin"><a class="dropdown-item" href="#" id="logout">Logout</a></div>
+          <div class="header-nav__back"> <a class="header-nav__left" href="#"> <i class="fa fa-chevron-left"> </i></a><a class="header-nav__right" href="#"> <i class="fa fa-chevron-right"></i></a></div>
+          <div class="header-nav__right-side"> 
+            <div class="header-nav__icon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></div>
+            <div class="header-nav__login dropdown">
+              <button class="btn login-dropdown d-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <figure class="login-dropdown__img"><img src="" alt="user image"/></figure><span class="login-dropdown__user"> </span><span class="dropdown-toggle"></span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLogin"><a class="dropdown-item" href="#" id="logout">Logout</a></div>
+            </div>
           </div>
         </nav>
       </header>
@@ -25,10 +28,10 @@
           <li class="nav-menu__item d-none d-lg-block">
             <div class="nav-menu__logo"><i class="fab fa-spotify"></i></div>
           </li>
-          <li class="nav-menu__item" title="Music"><a class="nav-menu__link fa fa-music" href="#"></a></li>
-          <li class="nav-menu__item" title="Podcast"><a class="nav-menu__link fa fa-podcast" href="#"></a></li>
-          <li class="nav-menu__item" title="Fav"><a class="nav-menu__link fa fa-heart" href="#"></a></li>
-          <li class="nav-menu__item" title="Mixins"><a class="nav-menu__link fa fa-compact-disc" href="#"></a></li>
+          <li class="nav-menu__item active" title="Top"><a class="nav-menu__link fa fa-music" href="/josefigueroa.github.io/dist/templates/top.html"></a></li>
+          <li class="nav-menu__item" title="Podcast"><a class="nav-menu__link fa fa-podcast"></a></li>
+          <li class="nav-menu__item" title="Fav"><a class="nav-menu__link fa fa-heart"></a></li>
+          <li class="nav-menu__item" title="Mixins"><a class="nav-menu__link fa fa-compact-disc"></a></li>
         </ul>
       </nav>
       <main class="main-view">
@@ -36,8 +39,7 @@
           <div class="resume__content"> 
             <div class="resume__info">
               <h1 class="resume__title">All Time Low </h1>
-              <p class="resume__genre">Rock Pop Punk</p>
-              <p class="resume__desc">Formed in 2003 in the suburbs of Baltimore, Maryland, All Time Low started out as a high school cover band before morphing into a melodic pop-punk act influenced by predecessors like New Found Glory and Blink-182... </p>
+              <p class="resume__genre"></p>
               <div class="resume__buttons">
                 <button class="btn btn-danger">PLAY ALL</button>
                 <button class="btn btn-danger">MIX <i class="fa fa-sync">         </i></button>
@@ -778,7 +780,14 @@
               <p>Dirty Work, featuring the single "I Feel Like Dancin'," was released in 2011. The album reached number six on the Billboard charts the week it was released, and the band hit the road. In 2012, All Time Low announced they had parted ways with  and released a new song, "The Reckless and the Brave," on their website in June. Soon after, they re-signed with Hopeless and began work on a new album. Don't Panic was released in November 2012, then reissued almost a year later with four newly recorded songs and four acoustic versions under the name Don't Panic: It's Longer Now! In 2015, All Time Low returned with their sixth record, Future Hearts, which found them reuniting with their Dirty Work producer, John Feldmann. In 2016, they released Straight to DVD 2: Past, Present & Future, a sequel to the 2010 live album. In February 2017, All Time Low issued the single "Dirty Laundry" in anticipation of their seventh studio long-player, Last Young Renegade, which arrived in June of that year. Renegade was their first effort issued on , and featured the singles "Nice2KnoU" and the pop-focused "Life of the Party." Their fifth consecutive Top Ten record, the set's unabashed pop polish proved divisive and, after the era came to a close, the band got to work on a course-correcting follow-up.</p>
               <p>In 2018, the summery and anthemic one-off single "Everything Is Fine" offered a taste of things to come with album number eight, which landed in early 2020. Wake Up, Sunshine saw All Time Low returning to their pop-punk roots after the brief pop foray on 2017's Renegade. Featuring appearances by  and the Band Camino, the upbeat LP included the single "Some Kind of Disaster." ~ Corey Apar</p>
             </div>
-            <div class="tab-pane fade" id="playlist" role="tabpanel" aria-labelledby="playlist-tab">.</div>
+            <div class="tab-pane fade" id="playlist" role="tabpanel" aria-labelledby="playlist-tab"> 
+              <div class="my-slider">
+                <div> <img src="https://source.unsplash.com/collection/1513994/600x600"/></div>
+                <div> <img src="https://source.unsplash.com/collection/502925/600x600"/></div>
+                <div> <img src="https://source.unsplash.com/collection/1513994/600x600"/></div>
+                <div> <img src="https://source.unsplash.com/collection/502925/600x600"/></div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -1047,12 +1056,12 @@
             <div class="modal-header align-items-center">
               <div class="col-md-6 p-0">
                 <div class="form-control--custom">
-                  <input class="form-control" type="search" placeholder="Buscar artistas o canciones"/><span class="form-control--search"></span>
+                  <input class="form-control" id="search" type="search" placeholder="Buscar artistas o canciones" autocomplete="off"/><span class="form-control--search"></span>
                 </div>
               </div>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="fa fa-times" aria-hidden="true"> </span></button>
             </div>
-            <div class="modal-body">...</div>
+            <div class="modal-body"> </div>
           </div>
         </div>
       </div>

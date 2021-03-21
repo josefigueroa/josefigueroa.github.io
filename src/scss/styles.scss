@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
 @import './../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './../../node_modules/tiny-slider/src/tiny-slider.scss';
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
@@ -8,14 +9,18 @@
 
 
 @import 'reboot.scss';
-@import 'header.scss';
-@import 'slider.scss';
-@import 'footer.scss';
+@import 'mixins';
+@import 'header';
+@import 'slider';
+@import 'tinySlider';
+@import 'footer';
 @import 'buttons';
+@import 'card';
 @import 'modal';
 @import 'collapse';
 @import 'forms';
 @import 'tabs';
+@import 'badge';
 @import 'tables';
 @import 'scrollbar';
 @import 'dropdown';

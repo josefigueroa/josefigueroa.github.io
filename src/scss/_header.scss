@@ -13,11 +13,25 @@ header{
   width: 100%;
   transition: all .3s ease-out;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-nav__sticky{  
   background: rgba($secondary, 1);
+}
+
+.header-nav__back{
+  width: 100px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  .header-nav__left,
+  .header-nav__right{
+    width: 50%;
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 .header-nav__list{
@@ -52,6 +66,10 @@ header{
   white-space: nowrap;
   font-size: .75rem;
   padding: 10px 15px;
+}
+
+.header-nav__right-side {
+  display: flex;
 }
 
 .header-nav__icon{

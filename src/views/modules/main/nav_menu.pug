@@ -4,5 +4,5 @@ nav.nav-menu
       .nav-menu__logo
         i.fab.fa-spotify
     each navmenuItems, key in navMenu
-      li.nav-menu__item(title=navmenuItems.name)
-        a(href='#').nav-menu__link(class=navmenuItems.class)
+      li.nav-menu__item(title=navmenuItems.name class=(navmenuItems.name == 'Top') ? 'active' : '')
+        a(href=navmenuItems.href).nav-menu__link(class=navmenuItems.class)

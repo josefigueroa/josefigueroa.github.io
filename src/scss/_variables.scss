@@ -121,6 +121,25 @@ $close-font-weight:                          normal;
 //Collapse
 $transition-collapse:                        all .7s ease;
 
+// Cards
+
+$card-spacer-y:                              .75rem;
+$card-spacer-x:                              .75rem;
+$card-border-width:                          0;
+$card-border-radius:                         0;
+$card-border-color:                          rgba($black, .125);
+// $card-inner-border-radius:                   subtract($card-border-radius, $card-border-width);
+$card-cap-bg:                                rgba($black, .03);
+$card-cap-color:                             null;
+$card-height:                                null;
+$card-color:                                 null;
+$card-bg:                                    transparent;
+
+$card-img-overlay-padding:                   1.25rem;
+
+// Badges
+$badge-bg:                                  $gray-700;     
+
 //Modals
 $modal-inner-padding:                        1rem;
 $modal-footer-margin-between:                .5rem;
@@ -161,6 +180,8 @@ $dropdown-bg:                                $info;
 $dropdown-link-color:                        $dropdown-color;
 $dropdown-link-hover-color:                  $white;
 $dropdown-link-hover-bg:                     $danger;
+
+$linear-gradient:                            linear-gradient(to bottom,rgba(29,30,50,.3),rgba($gray-900,1));
 
 
 // $custom-range-track-width:                  100%;

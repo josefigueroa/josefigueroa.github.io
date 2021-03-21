@@ -1,5 +1,6 @@
 const gulp = require('gulp'),
-      plugins = require('gulp-load-plugins')();
+      plugins = require('gulp-load-plugins')(),
+      uglify = require('gulp-uglify-es').default;
 
 var config = {
     srcDir: 'src/',
@@ -12,7 +13,8 @@ var config = {
     vendorLibraries: {
         jquery: 'node_modules/jquery/dist/jquery.min.js',
         popper: 'node_modules/popper.js/dist/umd/popper.min.js',
-        bootstrap: 'node_modules/bootstrap/dist/js/bootstrap.min.js'
+        bootstrap: 'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        tinySlider: 'node_modules/tiny-slider/dist/min/tiny-slider.js'
     },
 
     fontsLibraries: {
@@ -74,7 +76,7 @@ gulp.task('concatScripts', function() {
        
     gulp.src(arrayItems.concat(config.srcDir+config.jsFiles))
     .pipe(plugins.sourcemaps.init())
-        .pipe(plugins.uglify())
+        .pipe(uglify())
         .pipe(plugins.concat('main.min.js'))
     .pipe(plugins.sourcemaps.write())
     .pipe(gulp.dest(config.distDir+config.jsDir));

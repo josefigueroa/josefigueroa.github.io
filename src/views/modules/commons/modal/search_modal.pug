@@ -5,8 +5,17 @@ div(class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchMod
       .modal-header.align-items-center
         .col-md-6.p-0
             .form-control--custom
-                input(class="form-control" type="search" placeholder="Buscar artistas o canciones")
+                input(class="form-control" id="search" type="search" placeholder="Buscar artistas o canciones" autocomplete="off")
                 span.form-control--search
         button(type="button" class="close" data-dismiss="modal" aria-label="Close")
             span(aria-hidden="true" class="fa fa-times") 
-      .modal-body ...
+      .modal-body 
+        //- .card-content
+        //-   each value, index in Array(5)
+        //-     .card
+        //-       img(src="https://i.scdn.co/image/345f0de2b6bdadd50e7b5236324e9d2d1253a7d1", alt="")
+        //-       .card-body
+        //-         h5.card-title Card title
+               
+
+      
