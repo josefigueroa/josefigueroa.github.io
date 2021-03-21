@@ -393,7 +393,8 @@ const APPController = (function () {
         let imgGalleryBiggest = document.createElement("img");
         let dataItems = data.items;
         let topArtist = dataItems.slice(0,5);
-        let artistData = dataItems.slice(5, data.items.length);        
+        let artistData = dataItems.slice(5, data.items.length);     
+           
         
         imgGalleryBiggest.src = dataItems[0].images[0].url;
         topArtistGalleryBiggest.appendChild(imgGalleryBiggest);
