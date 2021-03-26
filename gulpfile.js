@@ -19,6 +19,7 @@ var config = {
 
     fontsLibraries: {
         fontAwesome: 'node_modules/@fortawesome/fontawesome-free/webfonts/**',
+        raleway: 'node_modules/fonts-raleway/fonts/fonts-raleway/**'
         
     },
 

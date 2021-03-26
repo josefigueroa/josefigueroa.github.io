@@ -66,8 +66,7 @@ const config = {
 
 const AUTHController = (function () {     
     const getLoginUrl = () => {
-        window.open(
-            config.auth_url+'?client_id='+config.clientId+'&response_type=token&redirect_uri='+config.redirect_uri+'&scope='+config.scopes+'&show_dialog=true', 
+        window.open(`${config.auth_url}?client_id=${config.clientId}&response_type=token&redirect_uri=${config.redirect_uri}&scope=${config.scopes}&show_dialog=true`,
             'Login with Spotify', 
             'width=800,height=600'
         )
@@ -122,7 +121,7 @@ const APIController = (() =>{
                 "type": "album,artist,playlist,track,show,episode"
             };
             // config.base_url+'search?q=' + query +'&' + (new URLSearchParams(typePArams)).toString()
-            const response = await fetch(config.base_url+'search?q=' + query +'&' + (new URLSearchParams(typePArams)).toString(), {
+            const response = await fetch(`${config.base_url}search?q=${query}&${(new URLSearchParams(typePArams)).toString()}`, {
                 headers: {
                     'Authorization': 'Bearer ' + AUTHController.getAccessToken()
                 }
